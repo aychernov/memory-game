@@ -1,0 +1,10 @@
+.cardGrid{
+  @apply mt-40 grid grid-cols-4 gap-4;
+}
+
+.btn {
+  @apply border px-5 transition-all duration-[ease-out] delay-[0.2s];;
+}
+.btn:hover {
+  @apply border px-2.5 bg-red-800 ease-linear;
+}

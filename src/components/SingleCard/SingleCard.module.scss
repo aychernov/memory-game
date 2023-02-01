@@ -1,0 +1,40 @@
+.card{
+   @apply relative;
+}
+
+.card img{
+    @apply max-w-full block h-auto rounded-md border-2 border-solid border-white;
+}
+
+.flippedPrev{
+    @apply flex items-center justify-items-center;
+
+}
+.flipped{
+    @apply flex items-center justify-items-center;
+}
+
+.back{
+    @apply flex items-center justify-items-center;
+}
+
+/*front anim*/
+.card .front {
+    @apply transition-all duration-[ease-in] delay-[0.2s] delay-[0.2s] absolute;
+    transform: rotateY(90deg);
+}
+
+.flipped .front {
+    @apply delay-[0.2s];
+    transform: rotateY(0deg);
+}
+
+/* cover anim*/
+.card .back {
+    @apply transition-all duration-[ease-in] delay-[0.2s] delay-[0.2s];
+}
+
+.flipped .back{
+    @apply delay-[0.2s];
+    transform: rotateY(90deg);
+}
